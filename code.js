@@ -1,7 +1,7 @@
 function mergesort(array) {
     
     let hi = array.length;
-    for (var i = 1; i < hi-1; i=i*2)
+    for (var i = 1; i < hi; i=i*2)
     {
         for(var k = 0; k <= hi; k= k + i*2) {
             
