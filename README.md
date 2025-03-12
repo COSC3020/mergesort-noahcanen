@@ -14,3 +14,10 @@ part of the array each recursive call considers.
 Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
+
+
+
+
+For this assignment, I used the resources of https://www.geeksforgeeks.org/in-place-algorithm/,https://www.w3schools.com/js/js_let.asp, https://stackoverflow.com/questions/2571049/how-to-sort-in-place-using-the-merge-sort-algorithm, and https://www.geeksforgeeks.org/how-to-swap-two-variables-in-javascript/.
+
+"I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice."
