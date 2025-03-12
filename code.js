@@ -1,3 +1,5 @@
+function mergesort(x) {
+
     let hi = x.length;
     for (var i = 1; i < hi; i= i*2){
         for(var k = 0; k <= hi; k = k + i*2) {
@@ -15,3 +17,4 @@
 
     }
     return x;
+}
