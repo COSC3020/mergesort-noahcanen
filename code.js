@@ -1,28 +1,20 @@
-function mergesort(arr){
-    var tempL
-    var tempR
+function mergesort(array) {
 
-    for(var size = 1; size < arr.length; size*=2){ //loop for the size of each split array
-        //console.log(size, "arr size")
-        for(var left = 0; left < arr.length; left+=size*2){ //figuring out where the left most index is for each array split
-            var left2 = left+size
-            //console.log(left, left2+size, "scope")
-            for(var i = left; i < left2+size; i++){ // comparing every number from each split section
-                for(var j = i; j < left2 + size; j++){
-                    tempR = arr[j]
-                    tempL = arr[i]
-                    //console.log(i,j)
-                    if(tempL > tempR){
-                        //console.log(tempL, tempR, "swapped")
-                        arr[i] = tempR
-                        arr[j] = tempL
-                        //console.log(arr)
-                    }
+    let hi = array.length;
+    for (var i = 1; i < hi; i=i*2){
+        for(var k = 0; k <= hi; k= k + i*2) {
+            for(var s1 = k; s1 < k + i*2;s1++){
+                for(var s2 = k; s2 < k + i*2;s2++){
+                    if(x[s1]  <= x[s2]) {
+                        temp = x[s1];
+                        x[s1] = x[s2];
+                        x[s2] = temp;
+
+                    } 
                 }
             }
         }
-        //console.log(arr)
-    }
 
-    return arr;
+    }
+    return array;
 }
