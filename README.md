@@ -15,7 +15,7 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-My first loop should be equivalent to log (n) my 2nd loop should be equivalent to log(n) my 3rd and 4th loops compares the elements which the 1st 2 loops isolate so they should be equivalent to n^2 and because all of this is inside of a big nested loop my Asymptotic equation should be $2log(n) * n^2$  so my worst case should be $O(log(n) * n^2)$
+My first loop should be equivalent to log (n) my 2nd loop should be equivalent to 2log(n) Because the second loop is based on the 1st loop  my 3rd and 4th loops compares the elements which the 1st two loops isolate so they should be equivalent to n^2 and because all of this is inside of a big nested loop my Asymptotic equation should be $3log(n) * n^2$  so my worst case should be $O(log(n) * n^2)$
 
 
 For this assignment, I used the resources of https://www.geeksforgeeks.org/in-place-algorithm/,https://www.w3schools.com/js/js_let.asp, https://stackoverflow.com/questions/2571049/how-to-sort-in-place-using-the-merge-sort-algorithm, and https://www.geeksforgeeks.org/how-to-swap-two-variables-in-javascript/.
