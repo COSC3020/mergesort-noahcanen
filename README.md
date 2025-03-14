@@ -15,7 +15,14 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-My first loop should be equivalent to log (n) my 2nd loop should be equivalent to 2log(n) Because the second loop is based on the 1st loop k = k + i*2   my 3rd and 4th loops compares the elements which the 1st two loops isolate so they should be equivalent to n^2 and because all of this is inside of a big nested loop my Asymptotic equation should be $3log(n) * n^2$  so my worst case should be $O(log(n) * n^2)$
+My first and 2nd loop should be equivalent to n Because they are the ones that are dividing the list into sections and inside the usual implementation complexity is n
+
+My 3th and 4rd loops does the comparisons inside of each of the sections yes so that should be equivalent to n log n because the usual implementation complexity is nlogn
+
+Making the asymptotic equation $n * nlogn = n^2*logn$ because everything is in nested loops
+
+Making the asymptotic analysis O($n^2*logn$)
+
 
 
 For this assignment, I used the resources of https://www.geeksforgeeks.org/in-place-algorithm/,https://www.w3schools.com/js/js_let.asp, https://stackoverflow.com/questions/2571049/how-to-sort-in-place-using-the-merge-sort-algorithm, and https://www.geeksforgeeks.org/how-to-swap-two-variables-in-javascript/.
