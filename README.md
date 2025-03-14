@@ -15,7 +15,7 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-My first and 2nd loop should be equivalent to nlogn because  my first loop will run log (n) times because it is growing i*2 my 2nd loop will run n  because it is growing by k = k + i*2 and it is nested inside the 1st loop.
+My first and 2nd loop should be equivalent to nlogn because  my first loop will run log (n) times because it is growing i = i*2 my 2nd loop will run n  because it is growing by k = k + i*2 and it is nested inside the 1st loop.
 
 My 3rd and 4rd loops does the comparisons inside of each of the sections, so that should be equivalent to n  because the usual implementation complexity is n^2
 
