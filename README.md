@@ -15,13 +15,13 @@ Analyse the time complexity of your implementation and give a $\Theta$ bound for
 its worst-case runtime. Add your answer, including your reasoning, to this
 markdown file.
 
-My first and 2nd loop should be equivalent to nlogn because  my first loop will run log (n) times because it is growing i = i*2 my 2nd loop will run n  because it is growing by k = k + i*2 and it is nested inside the 1st loop.
+My first loop sets the size of each partition. The partition increases by i = i*2, starting at a size of one This should run log n times
 
-My 3rd and 4rd loops does the comparisons inside of each of the sections, so that should be equivalent to n  because the usual implementation complexity is n^2
+My 2nd, 3rd, and 4th loops run through each partition and compare all the elements. Each partition has the size of I, and we will need to check all elements inside of each of the partitions are against all other elements, meaning that they should run $n^2$ times
 
-Making the asymptotic equation $n^2 * nlogn = n^3*logn$ because everything is in nested loops
+Making the asymptotic equation $n^2 * logn = n^2*logn$ because everything is in nested loops
 
-Making the asymptotic analysis O($n^3*logn$)
+Making the asymptotic analysis O($n^2*logn$)
 
 
 
